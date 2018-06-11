@@ -1,0 +1,19 @@
+.spoiler-content {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.spoiler-content.visible{
+    display: inline;
+    opacity: 1;
+}
+
+.spoiler button {
+    background-color: aqua;
+    border: 2px solid antiquewhite;
+    cursor: pointer;
+
+}

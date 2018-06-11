@@ -1,0 +1,51 @@
+body{
+    background-color: #eee;
+    padding: 50px;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tabs-link::after{
+    display: table;
+    content: ' ';
+    clear: both;
+}
+ ul,  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tabs-link li {
+    float: left;
+    display: inline-block;
+}
+.tabs-link a {
+    display: inline-block;
+    background-color: #eee;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 10px 15px;
+}
+
+.tabs-link .active a {
+    background-color: #ffffff;
+}
+.tabs-content {
+    position: relative;
+    z-index: 3;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-bottom: 20px;
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.active{
+    display: block;
+}
